@@ -5,6 +5,8 @@ print("WELCOME TO ROCK PAPER SCISSORS")
 
 
 # USER INPUT
+user_choice = input("Please make your selection ('rock', 'paper', 'scissors'):")
+print(f"You chose: '{user_choice}'")
 
 
 # VALIDATE USER INPUTS
