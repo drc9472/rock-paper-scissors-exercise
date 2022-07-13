@@ -1,4 +1,4 @@
-
+import random
 
 
 print("WELCOME TO ROCK PAPER SCISSORS")
@@ -6,13 +6,19 @@ print("WELCOME TO ROCK PAPER SCISSORS")
 
 # USER INPUT
 user_choice = input("Please make your selection ('rock', 'paper', 'scissors'):")
-print(f"You chose: '{user_choice}'")
+print(f"You chose: '{user_choice.capitalize()}'")
 
 
 # VALIDATE USER INPUTS
 
 
+
+
+
 # COMPUTER CHOICE
+valid_choice = ["Rock", "Paper", "Scissors"]
+computer_choice = random.choice(valid_choice)
+print(f"The computer chose: '{computer_choice}'")
 
 
 
