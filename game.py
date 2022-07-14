@@ -1,8 +1,8 @@
 import random
 
-
+print("------------------------------------")
 print("Welcome to my rock, paper, scissors game!")
-
+print("------------------------------------")
 
 # USER INPUT
 user_choice = input("Please make your selection ('rock', 'paper', 'scissors'):")
@@ -13,13 +13,14 @@ print(f"You chose: '{user_choice}'")
 # VALIDATE USER INPUTS
 valid_choice = ["Rock", "Paper", "Scissors"]
 if user_choice not in valid_choice:
-    print("Your choice is invalid")
+    print("Your choice is invalid, please restart the game to try again")
     exit()
 
 
 # COMPUTER CHOICE
 computer_choice = random.choice(valid_choice)
 print(f"The computer chose: '{computer_choice}'")
+print("------------------------------------")
 
 
 
@@ -44,6 +45,7 @@ elif user_choice == "Scissors":
     else:
         print("Rock crushes scissors. You lose.")
 
+print("------------------------------------")
 print("Thank you for playing. Please play again!")
 
 # DISPLAY RESULTS
